@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Yeah Digital - Brand Identity Social Graphic</title>
+<style>
+  /* Base64 Embedded Fonts */
+  @font-face {
+    font-family: 'Archivo Black';
+    src: url('https://raw.githubusercontent.com/google/fonts/main/ofl/archivoblack/ArchivoBlack-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('https://raw.githubusercontent.com/google/fonts/main/ofl/spacegrotesk/SpaceGrotesk%5Bwght%5D.ttf') format('truetype');
+    font-weight: 400 700;
+  }
+  @font-face {
+    font-family: 'Space Mono';
+    src: url('https://raw.githubusercontent.com/google/fonts/main/ofl/spacemono/SpaceMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Space Mono';
+    src: url('https://raw.githubusercontent.com/google/fonts/main/ofl/spacemono/SpaceMono-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+
+  :root {
+    --ink: #111113;
+    --paper: #f3f2ed;
+    --lime: #d6ff3f;
+    --violet: #6e5bff;
+    --muted-on-ink: rgba(243,242,237,0.55);
+    --radius: 2px;
+    --disp: 'Archivo Black', sans-serif;
+    --head: 'Space Grotesk', sans-serif;
+    --mono: 'Space Mono', monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+    background: var(--lime);
+    color: var(--ink);
+    font-family: var(--head);
+  }
+
+  .canvas {
+    width: 1080px;
+    height: 1080px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  /* Top Bar */
+  .brand-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--mono);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .dot {
+    width: 14px;
+    height: 14px;
+    background: var(--violet);
+    border-radius: 50%;
+  }
+
+  /* Main Section */
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: var(--ink);
+    border-radius: 50%;
+  }
+
+  .title {
+    font-family: var(--disp);
+    font-size: 110px;
+    line-height: 0.92;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+  }
+
+  .description {
+    font-size: 28px;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  /* Bottom CTA */
+  .cta-pill {
+    align-self: flex-start;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 18px 28px;
+    font-family: var(--mono);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: var(--radius);
+    letter-spacing: 0.05em;
+  }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="brand-header">
+      <div class="dot"></div>
+      <span>YEAH DIGITAL</span>
+    </div>
+
+    <div class="content">
+      <div class="eyebrow">01 · SERVICE</div>
+      <h1 class="title">BRAND<br>IDENTITY.</h1>
+      <p class="description">Naming, visual systems, and voice for companies that need to mean something before they say anything.</p>
+    </div>
+
+    <div class="cta-pill">
+      START A PROJECT →
+    </div>
+  </div>
+</body>
+</html>

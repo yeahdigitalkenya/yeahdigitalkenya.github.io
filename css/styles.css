@@ -1,0 +1,23 @@
+/* Custom styles for Project Yeah */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.uk-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.uk-heading-primary {
+    color: #2c3e50;
+    margin-top: 40px;
+}
+
+.uk-text-lead {
+    color: #7f8c8d;
+}
